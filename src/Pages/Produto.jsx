@@ -1,6 +1,6 @@
 import React from "react";
 
-const Clientes = () => {
+const Produto = () => {
   return (
     <div
       className="container d-flex justify-content-center align-items-center"
@@ -8,50 +8,50 @@ const Clientes = () => {
     >
       <div className="card" style={{ width: "400px" }}>
         <div className="card-body">
-          <h5 className="card-title text-center">Cadastro de Clientes</h5>
+          <h5 className="card-title text-center">Cadastro de Produto</h5>
           <form>
             <div className="mb-3">
-              <label htmlFor="nome" className="form-label">
-                Nome
-              </label>
-              <input type="text" className="form-control" id="nome" required />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="cpf" className="form-label">
-                CPF
-              </label>
-              <input type="text" className="form-control" id="cpf" required />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="endereco" className="form-label">
-                Endereço
+              <label htmlFor="nomeProduto" className="form-label">
+                Nome do Produto
               </label>
               <input
                 type="text"
                 className="form-control"
-                id="endereco"
+                id="nomeProduto"
                 required
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="telefone" className="form-label">
-                Telefone
+              <label htmlFor="descricao" className="form-label">
+                Descrição
+              </label>
+              <textarea
+                className="form-control"
+                id="descricao"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <div className="mb-3">
+              <label htmlFor="preco" className="form-label">
+                Preço
               </label>
               <input
-                type="tel"
+                type="number"
                 className="form-control"
-                id="telefone"
+                id="preco"
+                step="0.01"
                 required
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="email" className="form-label">
-                E-mail
+              <label htmlFor="quantidade" className="form-label">
+                Quantidade em Estoque
               </label>
               <input
-                type="email"
+                type="number"
                 className="form-control"
-                id="email"
+                id="quantidade"
                 required
               />
             </div>
@@ -65,4 +65,4 @@ const Clientes = () => {
   );
 };
 
-export default Clientes;
+export default Produto;

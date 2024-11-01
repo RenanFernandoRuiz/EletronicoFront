@@ -1,6 +1,6 @@
 import React from "react";
 
-const Clientes = () => {
+const Fornecedor = () => {
   return (
     <div
       className="container d-flex justify-content-center align-items-center"
@@ -8,19 +8,24 @@ const Clientes = () => {
     >
       <div className="card" style={{ width: "400px" }}>
         <div className="card-body">
-          <h5 className="card-title text-center">Cadastro de Clientes</h5>
+          <h5 className="card-title text-center">Cadastro de Fornecedor</h5>
           <form>
             <div className="mb-3">
-              <label htmlFor="nome" className="form-label">
-                Nome
+              <label htmlFor="nomeEmpresa" className="form-label">
+                Nome da Empresa
               </label>
-              <input type="text" className="form-control" id="nome" required />
+              <input
+                type="text"
+                className="form-control"
+                id="nomeEmpresa"
+                required
+              />
             </div>
             <div className="mb-3">
-              <label htmlFor="cpf" className="form-label">
-                CPF
+              <label htmlFor="cnpj" className="form-label">
+                CNPJ
               </label>
-              <input type="text" className="form-control" id="cpf" required />
+              <input type="text" className="form-control" id="cnpj" required />
             </div>
             <div className="mb-3">
               <label htmlFor="endereco" className="form-label">
@@ -65,4 +70,4 @@ const Clientes = () => {
   );
 };
 
-export default Clientes;
+export default Fornecedor;
